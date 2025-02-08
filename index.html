@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathematical Analysis - Course Notes</title>
+    
+    <!-- MathJax Configuration -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js"></script>
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                processEscapes: true
+            }
+        };
+    </script>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        nav {
+            margin: 20px 0;
+            background-color: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        nav a {
+            color: #2c3e50;
+            text-decoration: none;
+            margin-right: 20px;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #3498db;
+        }
+
+        .homework-section {
+            background-color: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .theorem {
+            background-color: #e8f4f8;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin: 15px 0;
+        }
+
+        .proof {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            margin: 15px 0;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mathematical Analysis</h1>
+        <p>Course Notes and Homework Solutions</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#homework">Homework</a>
+        <a href="#notes">Course Notes</a>
+        <a href="#resources">Resources</a>
+    </nav>
+
+    <div class="homework-section">
+        <h2>Latest Homework</h2>
+        
+        <h3>Homework 1: Sequences and Series</h3>
+        <p>Here's an example of how mathematical formulas will render:</p>
+        
+        <div class="theorem">
+            <strong>Theorem 1:</strong> For a convergent sequence $\{a_n\}$, if $\lim_{n \to \infty} a_n = L$, then for any $\epsilon > 0$, there exists an $N \in \mathbb{N}$ such that for all $n \geq N$:
+            $$|a_n - L| < \epsilon$$
+        </div>
+
+        <div class="proof">
+            <strong>Problem 1:</strong> Prove that the sequence defined by:
+            $$a_n = \frac{n^2 + 1}{n^2 - 1}$$
+            converges as $n \to \infty$, and find its limit.
+            
+            <p><em>Solution:</em> Let's solve this step by step:</p>
+            
+            1) First, let's try to simplify this expression:
+            $$\frac{n^2 + 1}{n^2 - 1} = \frac{n^2 + 1}{n^2 - 1} \cdot \frac{1/n^2}{1/n^2} = \frac{1 + 1/n^2}{1 - 1/n^2}$$
+            
+            2) As $n \to \infty$, $\frac{1}{n^2} \to 0$, therefore:
+            $$\lim_{n \to \infty} a_n = \frac{1 + 0}{1 - 0} = 1$$
+        </div>
+    </div>
+
+    <footer>
+        <p>Created with MathJax for Mathematical Analysis Course</p>
+        <p>Last updated: February 2025</p>
+    </footer>
+</body>
+</html>
