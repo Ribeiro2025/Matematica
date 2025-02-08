@@ -1,9 +1,4 @@
 # Matematica
 
-## Matemática Financeira
+# Site dedicado ao meu trabalho nas disciplinas do Mestrado em Matemática (Lista Aberta)
 
-## Optimização Numérica
-
-## Amostragens e Sondagens
-
-## Teoria do Risco
