@@ -7,13 +7,11 @@
     
     <!-- MathJax Configuration -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js"></script>
-    <script type="text/javascript" id="MathJax-script" async
-                 src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.0.0/es5/latest?tex-mml-chtml.js">
-    </script>
+
     <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
 
     <script>
-        MathJax = {
+        window.MathJax = {
             tex: {
                 inlineMath: [['$', '$'], ['\\(', '\\)']],
                 displayMath: [['$$', '$$'], ['\\[', '\\]']],
@@ -132,5 +130,7 @@
     <footer>
         <p>Last updated: February 2025</p>
     </footer>
+
+        
 </body>
 </html>
